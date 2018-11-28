@@ -1,5 +1,20 @@
 # Creating Services in PCF
 
+## Login to PCF
+
+Make sure you have the PCF CLI installed:
+[https://docs.run.pivotal.io/cf-cli/install-go-cli.html](https://docs.run.pivotal.io/cf-cli/install-go-cli.html)
+
+Verify you have a version greater than 6.37
+```
+cf --version
+```
+
+Instructions to login to the workshop PCF foundation (refer to the workshop agenda):
+```
+cf login
+```
+
 ## List Available Services
 
 List the services that are available on the platform
