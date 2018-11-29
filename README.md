@@ -44,5 +44,5 @@ cf create-service p-service-registry standard discovery-service
 Create a MySQL database for persistence:
 
 ```
-cf create-service p-mysql 100mb mysql-service
+cf create-service p-mysql db-small mysql-service
 ```
