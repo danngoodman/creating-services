@@ -12,7 +12,7 @@ cf --version
 
 Instructions to login to the workshop PCF foundation (refer to the workshop agenda):
 ```
-cf login
+cf login -a api.sys.prod.us-west-2.cernercf.io --sso
 ```
 
 ## List Available Services
