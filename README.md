@@ -31,6 +31,11 @@ Parts of our app will get their configurations from a service deployed to each s
 cf create-service p.config-server standard config-service -c '{"git": { "uri": "https://github.com/cts-workshop-12-2018/workshop-configs"} }'
 ```
 
+For Windows, use:
+```
+cf create-service p-config-server standard config-service -c "{\"git\": { \"uri\": \"https://github.com/cts-workshop-12-2018/workshop-configs\"} }"
+```
+
 ## Create a Service Registry (Discovery)
 
 Our apps will register with a discovery service that allows for blue/green deployment, scaling, load balancing and more:
