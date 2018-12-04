@@ -28,7 +28,7 @@ cf marketplace
 Parts of our app will get their configurations from a service deployed to each space:
 
 ```
-cf create-service p.config-server standard config-service -c '{"git": { "uri": "https://github.com/cts-workshop-12-2018/workshop-configs"} }'
+cf create-service p-config-server standard config-service -c '{"git": { "uri": "https://github.com/cts-workshop-12-2018/workshop-configs"} }'
 ```
 
 For Windows, use:
@@ -49,7 +49,7 @@ cf create-service p-service-registry standard discovery-service
 Create a MySQL database for persistence:
 
 ```
-cf create-service p-mysql db-small mysql-service
+cf create-service p.mysql db-small mysql-service
 ```
 
 ## Deploy a web app to PCF 
